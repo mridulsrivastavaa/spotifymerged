@@ -8,12 +8,12 @@ import CodeforcesWidget from "./CodeforcesWidget";
 import KaggleCompetitions from "./KaggleCompetitions";
 import qs from "qs";
 import axios from "axios";
+import Codeforces from "./cf/Codeforces";
 
 // Environment variables
 const clientId = import.meta.env.VITE_SPOTIFY_CLIENT_ID;
 const redirectUri = import.meta.env.VITE_SPOTIFY_REDIRECT_URI;
 import MridulSpotify from "./MridulSpotify";
-
 
 const Dashboard = () => {
   const [token, setToken] = useState(null);
@@ -125,19 +125,8 @@ const Dashboard = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {/* Left Column */}
         <div className="space-y-4">
-          {token ? (
-            <SpotifySection token={token} />
-          ) : (
-            <button
-              onClick={handleLoginClick}
-              className="bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-green-600"
-            >
-              🎧 Login with Spotify
-            </button>
-          )}
           {/* <SpotifySection /> */}
           <MridulSpotify />
-
         </div>
 
         {/* Center Column */}
@@ -149,7 +138,7 @@ const Dashboard = () => {
 
         {/* Right Column */}
         <div className="space-y-4">
-          <CodeforcesWidget />
+          <Codeforces />
           <KaggleCompetitions />
         </div>
       </div>

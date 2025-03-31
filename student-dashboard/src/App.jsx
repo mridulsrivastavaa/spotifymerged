@@ -5,7 +5,7 @@ import AuthPage from "./components/AuthPage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Home from "./components/Home"; // or { Header, Dashboard } if you prefer
 import "./index.css";
-import SpotifyMridul from "./components/Spotify-mridul";
+import Codeforces from "./components/cf/Codeforces";
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
           element={
             <ProtectedRoute>
               <Home />
+              <Codeforces />
             </ProtectedRoute>
           }
         />

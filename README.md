@@ -65,11 +65,6 @@ Provide more detailed analytics in the dashboard.
 
 🧑‍🤝‍🧑 Contributors
 
-Manasvi Singh - Chatbot Development, Newsletter UI, Data Flow Management.
+Manasvi Singh , Mridul Srivastava, Nitu Kumari Mahato, Tripti Rakesh Kumar
 
-Other Team Members - Dashboard Development, API Integration, Backend Management.
-
-📄 License
-
-This project is licensed under the MIT License.
 

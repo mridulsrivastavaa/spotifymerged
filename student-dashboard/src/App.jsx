@@ -6,6 +6,9 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Home from "./components/Home"; // or { Header, Dashboard } if you prefer
 import "./index.css";
 
+import Codeforces from "./components/cf/Codeforces";
+
+
 function App() {
   return (
     <Router>
@@ -19,6 +22,7 @@ function App() {
           element={
             <ProtectedRoute>
               <Home />
+              <Codeforces />
             </ProtectedRoute>
           }
         />

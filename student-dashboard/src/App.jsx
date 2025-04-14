@@ -20,7 +20,7 @@ function App() {
           element={
             <ProtectedRoute>
               <Home />
-              <Codeforces />
+              {/* <Codeforces /> */}
             </ProtectedRoute>
           }
         />
